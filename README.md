@@ -2,9 +2,9 @@
 
 # 👋 Hey, I'm Ernani
 
-### Building crypto-native commerce rails for the next billion transactions
+### Building agentic SocialFi tooling for creators on Farcaster + Base
 
-[Website](https://geckovision.tech) • [Twitter](https://x.com/ernanibritto) • [LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)
+[Website](https://geckovision.tech) • [X](https://x.com/ernanibritto) • [LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)
 
 </div>
 
@@ -12,48 +12,76 @@
 
 ## 🚀 What I'm Building
 
-**[Gecko Payments](https://geckovision.tech)** — Shopify for crypto, but without the wallet anxiety.
+**Gecko Vision** — *Agentic Growth Ops* for creators on **Farcaster**.
 
-I'm building hosted checkout flows that feel like Stripe but settle in USDC on Solana. Think:
-- **Embedded wallets** (email/social login, no seed phrases)
-- **Gas abstraction** (sponsored transactions)
-- **Merchant dashboard** (webhooks, payment links, analytics)
+I’m building an AI-first tool that helps creators:
+- **Generate Frames/Mini Apps** (interactive posts) from templates (no-code)
+- **QA + Preview** before publishing (catch broken frames, bad configs, missing metadata)
+- **Monitor performance in real-time** (views/likes/replies/recasts, CTR, conversions)
+- **Auto-optimize campaigns** based on past posts + live metrics
+- Run **gasless onchain actions** when it matters (AA + paymasters)
 
-Target: high-ticket & high-risk ecommerce where traditional payments say no.
+Think: *“Don’t let me waste a post”* + *“Make my campaigns smarter every day.”*
 
 ---
 
 ## 💡 Why This Matters
 
-Most crypto checkout flows:
-1. Ask users to "connect wallet"
-2. Make them buy gas tokens
-3. Hope they don't abandon
+Creators lose momentum (and revenue) when:
+1. Frames break in production
+2. Campaigns are posted with no QA or iteration loop
+3. Analytics are fragmented and slow to act on
+4. Onchain actions add friction (gas, wallets, UX anxiety)
 
-**We skip all that.** Pay with email. Receive USDC. Done.
+**Gecko makes SocialFi workflows feel operational**:
+- publish safely
+- measure fast
+- improve automatically
+- keep UX smooth with gas sponsorship where needed
+
+---
+
+## 🧠 Core Product Modules
+
+### 1) Frame Doctor (QA + Preview)
+- Validate frame metadata, actions, params, deep links
+- Simulate locked/unlocked flows
+- Detect anti-farm gaps (one claim per FID, rate limits)
+- Output: *preview report + fix suggestions + publish-ready version*
+
+### 2) Campaign Autopilot (Monitor + Optimize)
+- Track performance in real time
+- Alert on anomalies (drop in engagement / conversion)
+- Suggest next best actions (copy/CTA/time/template)
+- Daily/weekly reports with learnings and recommended experiments
+
+### 3) Onchain Actions (Base + USDC)
+- Optional: USDC payments, claims, receipts (collectibles)
+- AA + Paymaster for gasless first actions (conversion lever)
 
 ---
 
 ## 🛠️ Tech Stack
 
-```typescript
+```ts
 const stack = {
-  blockchain: ["Solana", "USDC", "Account Abstraction"],
+  social: ["Farcaster (Frames v2 / Mini Apps)", "Neynar", "OpenClaw"],
+  chain: ["Base", "USDC", "Account Abstraction", "Paymasters"],
   backend: ["Next.js", "Node.js", "TypeScript"],
-  frontend: ["React", "TailwindCSS", "shadcn/ui"],
-  wallets: ["Alchemy Account Kit", "Smart Wallets"],
-  tools: ["Webhooks", "Alchemy Gas Manager", "Vercel"]
-}
+  data: ["Postgres/Supabase (or equivalent)", "Webhooks", "Event listeners"],
+  infra: ["Vercel", "Queues/Cron for agents", "Observability/log replay"]
+};
 ```
 
 ---
 
 ## 🎯 Current Focus
 
-- [ ] MVP with 3 pilot merchants (coffee, art, fashion)
-- [ ] Shopify plugin for one-click integration
-- [ ] Real-time settlement & webhook infrastructure
-- [ ] Mobile-first checkout UX
+- [ ] Frame Doctor v0 (QA + preview report + publish flow)
+- [ ] Campaign monitoring + daily performance reports
+- [ ] 2–3 templates (Pay-to-Reveal, Claim perk, Tip-to-mint)
+- [ ] First pilot creators (educators/writers/dev creators → then gamers)
+- [ ] Gasless claim (AA + Paymaster) with spend caps
 
 ---
 
@@ -61,35 +89,25 @@ const stack = {
 
 | Who | Why |
 |-----|-----|
-| **Shopify dev shops** | Pilot the plugin with your clients |
-| **High-ticket merchants** | Jewelry, art, consulting—anyone tired of chargebacks |
-| **Solana DevRel** | Partnerships, co-marketing, ecosystem grants |
-| **Design partners** | Feedback on UX, especially mobile checkout |
+| **Farcaster creators** | Run 1–2 campaigns as design partners |
+| **Builders using Frames/Mini Apps** | Feedback on QA checks + best practices |
+| **Base ecosystem / DevRel** | Demo partnerships + ecosystem alignment |
+| **Growth operators / community managers** | Help define the “autopilot” workflows |
+
+If you’re a creator who posts consistently on Farcaster and wants **less guesswork + fewer broken launches**, let’s talk.
 
 ---
 
-## 📊 GitHub Activity
+## 💬 Let’s Talk
 
-<div align="center">
+Want to pilot Gecko Vision or collaborate on agentic SocialFi workflows?
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ernanibmurtinho&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=22D3EE)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ernanibmurtinho&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=22D3EE)
-
-</div>
-
----
-
-## 💬 Let's Talk
-
-Building something in crypto commerce? Want to pilot Gecko Payments? Just want to chat about web3 UX?
-
-**DM me on [Twitter](https://x.com/ernanibritto)** or **[LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)**
+**DM me on [X](https://x.com/ernanibritto)** or **[LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)**
 
 <div align="center">
 
 ---
 
-*"Make crypto payments boring (in a good way)"*
+*"Make SocialFi ops boring (in a good way)."*
 
 </div>
