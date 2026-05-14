@@ -2,9 +2,9 @@
 
 # 👋 Hey, I'm Ernani
 
-### Building agentic SocialFi tooling for creators on Farcaster + Base
+### Building grounded verdicts for AI agents — and the people who run them
 
-[Website](https://geckovision.tech) • [X](https://x.com/ernanibritto) • [LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)
+[Gecko](https://app.geckovision.tech) • [X](https://x.com/ernanibritto) • [LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)
 
 </div>
 
@@ -12,76 +12,57 @@
 
 ## 🚀 What I'm Building
 
-**Gecko Vision** — *Agentic Growth Ops* for creators on **Farcaster**.
+**[Gecko](https://app.geckovision.tech)** — a Knowledge-as-a-Service oracle for agentic workflows.
 
-I’m building an AI-first tool that helps creators:
-- **Generate Frames/Mini Apps** (interactive posts) from templates (no-code)
-- **QA + Preview** before publishing (catch broken frames, bad configs, missing metadata)
-- **Monitor performance in real-time** (views/likes/replies/recasts, CTR, conversions)
-- **Auto-optimize campaigns** based on past posts + live metrics
-- Run **gasless onchain actions** when it matters (AA + paymasters)
+When an AI agent has to make a high-stakes call — *"is this trade worth it?"*, *"should I deposit into this vault?"* — a single model guess isn't enough. Gecko runs a 7-voice adversarial debate grounded in investor canon (Marks, Damodaran, Berkshire) + live on-chain data, and returns a structured verdict with surviving dissent and citations.
 
-Think: *“Don’t let me waste a post”* + *“Make my campaigns smarter every day.”*
+- **Verdict envelope** — verdict, confidence, dissent, citations, blocker questions
+- **Cache-then-charge oracle** — agents query on cadence, not per-trade
+- **x402-native pricing** — pay-per-call in USDC on Solana / Base
+- **Claude Code skill distribution** — `Read app.geckovision.tech/skill.md` → bootstrap → use
 
 ---
 
 ## 💡 Why This Matters
 
-Creators lose momentum (and revenue) when:
-1. Frames break in production
-2. Campaigns are posted with no QA or iteration loop
-3. Analytics are fragmented and slow to act on
-4. Onchain actions add friction (gas, wallets, UX anxiety)
-
-**Gecko makes SocialFi workflows feel operational**:
-- publish safely
-- measure fast
-- improve automatically
-- keep UX smooth with gas sponsorship where needed
+Agents that act on money need oracles, not vibes. Today's AI ecosystem ships single-model answers, refusal disclaimers, and confident hallucinations on price / TVL / APY. Gecko is the opposite shape: **always answer, always cite, always show what your strongest critic said.**
 
 ---
 
-## 🧠 Core Product Modules
+## 🧠 Core Surfaces
 
-### 1) Frame Doctor (QA + Preview)
-- Validate frame metadata, actions, params, deep links
-- Simulate locked/unlocked flows
-- Detect anti-farm gaps (one claim per FID, rate limits)
-- Output: *preview report + fix suggestions + publish-ready version*
+### 1) `gecko_trade_research` — the oracle MCP tool
+Adversarial 7-voice debate (analyst, critic, contrarian, risk, …) over a hybrid corpus: investor canon + protocol-native data + live market feeds. Output: verdict envelope with grounded dissent and structured citations.
 
-### 2) Campaign Autopilot (Monitor + Optimize)
-- Track performance in real time
-- Alert on anomalies (drop in engagement / conversion)
-- Suggest next best actions (copy/CTA/time/template)
-- Daily/weekly reports with learnings and recommended experiments
+### 2) `gecko-trade-agent` — runtime that consumes the oracle
+Advisor-mode in v0.1 (alerts), trader-mode in v0.2 (executes through neutral adapters — SendAI / OKX / Backpack). Cache-then-charge on `idea_hash` so agents call the oracle on cadence + triggers, not per-trade.
 
-### 3) Onchain Actions (Base + USDC)
-- Optional: USDC payments, claims, receipts (collectibles)
-- AA + Paymaster for gasless first actions (conversion lever)
+### 3) `gecko-trade-coach` — conversational strategy builder
+Takes a user from *"I want to make money in DeFi"* to a schema-validated strategy spec the agent can run.
 
 ---
 
 ## 🛠️ Tech Stack
 
-```ts
-const stack = {
-  social: ["Farcaster (Frames v2 / Mini Apps)", "Neynar", "OpenClaw"],
-  chain: ["Base", "USDC", "Account Abstraction", "Paymasters"],
-  backend: ["Next.js", "Node.js", "TypeScript"],
-  data: ["Postgres/Supabase (or equivalent)", "Webhooks", "Event listeners"],
-  infra: ["Vercel", "Queues/Cron for agents", "Observability/log replay"]
-};
+```python
+stack = {
+    "core":     ["Python 3.11+", "uv workspace", "FastAPI", "MCP"],
+    "models":   ["OpenAI GPT-4o", "Anthropic Sonnet 4.6 (judge)", "AutoGen GroupChat"],
+    "data":     ["MongoDB Atlas (Vector Search)", "Cohere Rerank"],
+    "payments": ["x402 on Solana / Base", "USDC", "frames.ag + CDP"],
+    "delivery": ["Claude Code skills", "Vercel", "AWS ECS"],
+    "sources":  ["Pyth", "Helius", "Birdeye", "Jupiter", "Tavily"],
+}
 ```
 
 ---
 
 ## 🎯 Current Focus
 
-- [ ] Frame Doctor v0 (QA + preview report + publish flow)
-- [ ] Campaign monitoring + daily performance reports
-- [ ] 2–3 templates (Pay-to-Reveal, Claim perk, Tip-to-mint)
-- [ ] First pilot creators (educators/writers/dev creators → then gamers)
-- [ ] Gasless claim (AA + Paymaster) with spend caps
+- [ ] V1 ship-gate on grounded trade verdicts (6-dim rubric — accuracy, citation relevance, provider coverage, hallucination, dissent grounding, calibration)
+- [ ] Investor-canon corpus depth (Oaktree memos, NYU Stern, Berkshire 1977–2024 — public-domain only)
+- [ ] First 10 outside-network users running `gecko_trade_research` weekly
+- [ ] OKX OnchainOS *Skill Quality* submission
 
 ---
 
@@ -89,18 +70,16 @@ const stack = {
 
 | Who | Why |
 |-----|-----|
-| **Farcaster creators** | Run 1–2 campaigns as design partners |
-| **Builders using Frames/Mini Apps** | Feedback on QA checks + best practices |
-| **Base ecosystem / DevRel** | Demo partnerships + ecosystem alignment |
-| **Growth operators / community managers** | Help define the “autopilot” workflows |
-
-If you’re a creator who posts consistently on Farcaster and wants **less guesswork + fewer broken launches**, let’s talk.
+| **Crypto-native traders / yield farmers** | Stress-test verdicts on real positions |
+| **Agent builders (Claude Code, OKX, SendAI)** | Compose `gecko_trade_research` into your skill |
+| **Investor-letter / research nerds** | Tell me which canon sources I'm missing |
+| **x402 / Solana payment infra** | Integrate the oracle as a paid call |
 
 ---
 
-## 💬 Let’s Talk
+## 💬 Let's Talk
 
-Want to pilot Gecko Vision or collaborate on agentic SocialFi workflows?
+Building agentic finance, trade-oracle infra, or grounded-verdict primitives? Interested.
 
 **DM me on [X](https://x.com/ernanibritto)** or **[LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)**
 
@@ -108,6 +87,6 @@ Want to pilot Gecko Vision or collaborate on agentic SocialFi workflows?
 
 ---
 
-*"Make SocialFi ops boring (in a good way)."*
+*"Answer the question. Cite your work. Show what your strongest critic said."*
 
 </div>
