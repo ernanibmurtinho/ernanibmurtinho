@@ -66,6 +66,13 @@ stack = {
 
 ---
 
+## 🌱 Open-source contributions
+
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow/pull/127)** — shipped the Portuguese (pt-BR) README for ByteDance's deep-research agent framework (76k★), so Brazilian devs can pick it up in their own language.
+- **[solanabr/solana-ai-kit](https://github.com/solanabr/solana-ai-kit/pull/47)** — fixed `validate.sh` falsely reporting uninitialized submodules as failures.
+
+---
+
 ## 🤝 Looking for
 
 | Who | Why |
