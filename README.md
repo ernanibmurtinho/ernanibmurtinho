@@ -50,10 +50,6 @@ A coding agent can one-shot a popular API. It can't one-shot the **Nth *painful*
 
 **`gecko-surf` — the comprehension engine.** Ingest an OpenAPI surface → question-shaped, first-call-correct agent tools (auth hidden, units / placement / idempotency resolved), served over MCP. A `$0` **recorded mode** simulates the call offline before a cent moves.
 
-**[`orquestra`](https://github.com/ernanibmurtinho/orquestra)** — Solana program IDLs into production-ready APIs and MCP servers, free and open-source. Plus [`orquestra-signer-mcp`](https://github.com/ernanibmurtinho/orquestra-signer-mcp) for signing across backends.
-
-**[`solana-ai-kit`](https://github.com/ernanibmurtinho/solana-ai-kit)** — the configs an expert Solana builder actually wants: `CLAUDE.md`, agents, commands, hooks, rules and skills across Web, Anchor, Pinocchio, Unity, mobile and security.
-
 **[`ayuda-venezuela-bot`](https://github.com/ernanibmurtinho/ayuda-venezuela-bot)** — a Spanish-first Telegram bot giving Venezuelans clear emergency information, an agent over the SOS Venezuela API. Comprehension pointed at something that isn't a demo.
 
 **The three verbs.** APIs get **PAID** (rails), skills get **DISTRIBUTED** (marketplaces), **APIs get USED** (Gecko — comprehension). We compose on x402 / MCP / pay.sh — not a payment rail, not a marketplace.
@@ -65,7 +61,7 @@ A coding agent can one-shot a popular API. It can't one-shot the **Nth *painful*
 ```python
 stack = {
     "engine":    ["Python 3.11+", "uv", "MCP (Streamable-HTTP)", "stdlib-first", "ruff", "mypy"],
-    "chain":     ["Solana", "Anchor", "Pinocchio", "IDL → API/MCP", "surfpool forks"],
+    "chain":     ["Solana", "Anchor", "Pinocchio", "IDL comprehension", "surfpool forks"],
     "delivery":  ["PyPI: gecko-surf", "one-click MCP for Claude / Cursor / VS Code", "Vercel", "AWS ECS"],
     "teaching":  ["Jupyter", "deterministic offline grading", "GitHub Actions as the gradebook"],
     "model":     ["open-core — open engine, private correctness corpus"],
@@ -88,8 +84,13 @@ stack = {
 
 ## 🌱 Open source
 
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow/pull/127)** — shipped the Portuguese (pt-BR) README for ByteDance's deep-research agent framework (76k★), so Brazilian devs can pick it up in their own language.
-- **[solanabr/solana-ai-kit](https://github.com/solanabr/solana-ai-kit/pull/47)** — fixed `validate.sh` falsely reporting uninitialized submodules as failures.
+Patches I sent to projects other people built and maintain:
+
+- **Orquestra**, by [@berkayoztunc](https://github.com/berkayoztunc) — his project, IDLs into APIs and MCP servers. I sent two fixes: [one so the signer refuses bytes that are not the ones that were checked](https://github.com/berkayoztunc/orquestra-signer-mcp/pull/1) (verification is worth nothing if what gets signed can differ from what was verified), and [one so a transaction reports its own compute units rather than an inner CPI's](https://github.com/berkayoztunc/orquestra/pull/9).
+- **DeerFlow**, by [ByteDance](https://github.com/bytedance/deer-flow) (76k★) — I contributed [the Portuguese (pt-BR) README](https://github.com/bytedance/deer-flow/pull/127), so Brazilian devs can pick it up in their own language.
+
+Mine, and open:
+
 - **[gecko-ai-coach](https://github.com/Gecko-Academy/gecko-ai-coach)** — a grounded course coach that ships with its own hit rate, and a contribution bar: a pull request has to carry its before-and-after number.
 
 ---
