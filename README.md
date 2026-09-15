@@ -4,7 +4,7 @@
 
 ### Making any API agent-usable — first-call-correct, no integration code
 
-[Gecko](https://geckovision.tech) • [gecko-surf](https://github.com/GeckoVision/gecko-surf) • [Dev3Pack](https://gecko-academy.github.io/dev3pack-cohort-2026-09/) • [X](https://x.com/ernanibritto) • [LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)
+[Gecko](https://geckovision.tech) • [gecko-surf](https://github.com/GeckoVision/gecko-surf) • [X](https://x.com/ernanibritto) • [LinkedIn](https://www.linkedin.com/in/ernanibritto/?locale=en_US)
 
 </div>
 
@@ -27,18 +27,18 @@ gecko <openapi-url>          # → comprehension summary + a one-click "add to C
 
 ## 🎓 And teaching it
 
-**[Dev3Pack AI Engineering](https://gecko-academy.github.io/dev3pack-cohort-2026-09/)** — a three-week cohort I'm running right now, 14 Sep to 2 Oct 2026. Fifteen live sessions, a self-paced Python fast lane, and a capstone.
+I'm running **Dev3Pack AI Engineering** right now — a three-week cohort, fifteen
+live sessions, a self-paced Python fast lane and a capstone, 14 Sep to 2 Oct 2026.
 
-The part I care about is how it's graded, because it's the same argument as the day job:
+It is graded the same way I argue about the day job: **every scored exercise runs
+offline** against a deterministic fake model, so no key, no network and no bill
+stands between anybody and finishing. A submission is a claim **plus the notebook
+that produced it** — the tool refuses to hand in a notebook nothing was run in.
 
-- **Every scored exercise runs offline** against a deterministic fake model. No API key, no network, no bill — so nobody is priced out of finishing.
-- **Evidence, not claims.** A submission is a claim plus the notebook that produced it; the tool refuses to hand in a notebook nothing was run in.
-- **The whole track is public.** [Hand-ins](https://github.com/Gecko-Academy/dev3pack-submissions) are pull requests, CI is shape-only, merging is automatic. GitHub *is* the API.
-- **[The course itself is open](https://github.com/Gecko-Academy/dev3pack-cohort-2026-09)** — pages, notebooks and checks, released a week at a time.
+Building a course in public is the cheapest honesty test I know: every claim gets
+run by thirty people on thirty different machines, the same week you make it.
 
-Building a course in public is the cheapest honesty test I know: every claim gets run by thirty people on thirty different machines, the same week you make it.
-
----
+*Enrolment is closed for this cohort. Ask me about the next one.*
 
 ## 💡 Why this matters
 
@@ -79,7 +79,7 @@ stack = {
 
 ## 🎯 Current focus
 
-- [ ] **Dev3Pack cohort through 2 Oct** — fifteen sessions, shipped a week at a time, in public
+- [ ] **Dev3Pack cohort through 2 Oct** — fifteen sessions, a week at a time
 - [ ] First 10 outside-network teams running `gecko-surf` on their Nth painful API weekly
 - [ ] The **correctness corpus** — every call teaches how to call API X right
 - [ ] Surfpool / Solana-AI-Kit — comprehend the chain's tools *and* the APIs around them
@@ -101,7 +101,7 @@ stack = {
 | **Teams shipping multi-API agents** | Bring your messiest, most painful API — let's make it first-call-correct |
 | **Agent-tooling builders** | Compose Gecko's comprehension into your kit |
 | **API providers with human-shaped docs** | See your surface become agent-usable, unilaterally |
-| **Engineers who want the cohort** | Next Dev3Pack runs after 2 Oct — say hello |
+| **Engineers who want the next cohort** | Dev3Pack runs again after 2 Oct — say hello before it opens |
 
 ---
 
